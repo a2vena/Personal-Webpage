@@ -1,0 +1,5 @@
+cd "/Users/alexvena16/Desktop/Education/Continuous Learning/CS50X/CS50 Final Project/Personal Webpage"
+export FLASK_APP=application.py
+export FLASK_ENV=development
+. venv/bin/activate
+flask run

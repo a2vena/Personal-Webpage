@@ -1,0 +1,64 @@
+{% extends 'template.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+
+<h1> Welcome! </h1>
+
+<p id='intro'>I started my career in materials R&D after graduating with a BASc in Nanotechnology Engineering from the University of Waterloo in 2016. Over the years, I became more interested in the application of programming and mathematics to drive complex data processing and analysis. To support this interest, I decided to pursue a computer science Masters at the University of Pennsylvania. I am excited to start this journey in Fall 2021!</p>
+<p id='signature'>Alex Vena</p>
+
+<div class='flex wrap'>
+    <div class="container">
+        <h3>Past Projects</h3>
+        <a href='/portfolio'>
+            <div class="content">
+                <div id="projAnimation">
+                    <img id='projHomeImg' src="static/images/portfolio_fydp.jpg">
+                    <p>Antimicrobial Plastic for 3D Printing of Food-Safe Items</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <h3>Career Highlights</h3>
+        <a href='/resume'>
+            <div class="content">
+                <div class='flex wrap'>
+                    <img src="static/images/logo_harvard.png" alt='Harvard Logo'>
+                    <img src="static/images/logo_uofc.png" alt='University of Calgary Logo'>
+                    <img src="static/images/logo_uw.png" alt='University of Waterloo Logo'>
+                    <img src="static/images/logo_AST.png" alt='Adaptive Surface Technologies Logo'>
+                    <img src="static/images/logo_lumotune_alt.jpg" alt='Lumotune Logo'>
+                </div>
+                <p>High impact problem-solving in academia and industry</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <h3>Recent Articles</h3>
+        <a href='/articles'>
+            <div class="content">
+                <p class='placeholder'>Coming Soon!</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <h3>About Me</h3>
+        <a href='/about'>
+            <div class="content">
+                <div class="flex wrap">
+                    <img src="static/images/value_balance.png">
+                    <img src="static/images/hobby_piano.png">
+                    <img src="static/images/hobby_finances.png">
+                </div>
+                <p>Core Values and Interests</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endblock %}
