@@ -4,4 +4,4 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "template"
-  baseurl: https://a2vena.github.io/
+
