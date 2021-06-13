@@ -53,7 +53,7 @@ if (document.querySelector('title').text=="Home"){
         if (i >= projID.length){
             i=0;
         }
-        this.children[0].src = 'static/images/portfolio_'+projID[Math.floor(i)]+'.jpg'; //Updates project image
+        this.children[0].src = '/static/images/portfolio_'+projID[Math.floor(i)]+'.jpg'; //Updates project image
         this.children[1].innerHTML = projTitle[Math.floor(i)]; //Updates project title
     })
 }
@@ -311,6 +311,6 @@ if (document.querySelector('title').text=='Contact'){
     let bulb = document.querySelector('#bulb');
     //On mouseover, change the BW bulb to a coloured bulb
     bulb.addEventListener('mouseover',function(){
-        bulb.src= 'static/images/contact_lightbulb_color.png'
+        bulb.src= '/static/images/contact_lightbulb_color.png'
     })
 }
