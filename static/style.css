@@ -5,7 +5,6 @@ body {
     min-height:100vh; /*Positions footer at the bottom of screen if content does not fill vh */
     margin: 0;
     background-color: #fefefe;
-    display:none;
 }
 
 h1 {
