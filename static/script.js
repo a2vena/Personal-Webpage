@@ -284,7 +284,7 @@ if (document.querySelector('title').text == 'About Me'){
     }
 
     // (2) Change text and icon opacity every 2 seconds (to match with circle rotation)
-    let hobbyWheel = document.querySelector('.static')
+    var hobbyWheel = document.querySelector('.static')
     let i = 0;
     let opacity = 0.6;
 
