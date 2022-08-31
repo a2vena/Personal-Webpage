@@ -43,10 +43,10 @@ scrollBtn.addEventListener('click',function(){
 
 // -------------------------------------HOME PAGE------------------------------------//
 if (document.querySelector('title').text=="Home"){
-    const projID = ['n1','durable','lcd','multiphase','sps','zero','np','ncnt','fydp']; //ID for project images
-    const projTitle = ['Non-Biocidal Marine Paint for Vessel Hulls','Durable Marine Coatings with High Biofouling Resistance','Optical Formulations for Liquid Crystal Displays','Tunable Surface Properties of Multiphase Polymers','Self-Stratifying Porous Silicones with Protective Skin Layer','Low-Waste Consumer Packaging Using Liquid-Infused Surfaces','Nanoparticle Diffusion for Drug Delivery Applications','Controlled Synthesis of Nitrogen-Doped Carbon Nanotubes','Antimicrobial Plastic for 3D Printing of Food-Safe Items']; //Project Title
+    const projID = ['seaquills','sanitizer', 'n1','durable','lcd','multiphase','sps','zero','np','ncnt','fydp']; //ID for project images
+    const projTitle = ['Full-Stack Real Estate Web Application', 'Index Out of Bounds Sanitizer for C Programs', 'Non-Biocidal Marine Paint for Vessel Hulls','Durable Marine Coatings with High Biofouling Resistance','Optical Formulations for Liquid Crystal Displays','Tunable Surface Properties of Multiphase Polymers','Self-Stratifying Porous Silicones with Protective Skin Layer','Low-Waste Consumer Packaging Using Liquid-Infused Surfaces','Nanoparticle Diffusion for Drug Delivery Applications','Controlled Synthesis of Nitrogen-Doped Carbon Nanotubes','Antimicrobial Plastic for 3D Printing of Food-Safe Items']; //Project Title
     let pastProj = document.querySelector('#projAnimation'); //Project image and title displayed on Home Page
-    let i = 0.5; //index for project image and title
+    let i = -0.5; //index for project image and title
     //When one animation iteration occurs, the counter will increase (2 increases for image to change)
     pastProj.addEventListener('animationiteration',function(){
         i+= 0.5;

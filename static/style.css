@@ -66,6 +66,11 @@ h4{
     margin-bottom:10vh;
 }
 
+.std{
+    color:purple;
+    text-decoration:underline;
+}
+
 a{
     color:black;
     text-decoration:none;
@@ -89,6 +94,10 @@ li{
 
 html{
     -webkit-font-smoothing: antialiased;
+}
+
+.centered{
+    text-align:center;
 }
 
 /*--------------------------TEMPLATE----------------------------*/
@@ -273,7 +282,7 @@ footer {
 
 #signature{
     border-bottom:3px solid #aaa;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin:0px;
     font-family:'Marck Script';
     font-size:calc(20px + 1vw);     /*static: 28px */
@@ -462,6 +471,9 @@ footer {
 .modalPage p.smallFont{
     font-size:0.65em;
 }
+.modalPage p.largeFont{
+    font-size:0.85em;
+}
 
 .modalPage span{
     font-weight:bolder;
@@ -485,7 +497,6 @@ video{
     margin:0;
     list-style:none;
     font-size:0.9em;
-    text-align:center;
 }
 
 .check li::before{
@@ -644,8 +655,8 @@ ol a:hover{
 .tri{
     display:inline-block;
     position:relative;
-    top:0.4vw;
-    font-size:1.25em;
+    top:0.3vw;
+    font-size:1.2em;
     line-height:0px;
 }
 
