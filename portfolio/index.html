@@ -127,7 +127,7 @@ title: Portfolio
             <div class="modalPage">
                 <h3><b>Problem:</b> Index Out of Bounds Errors in C Programs</h3>
                 <div class='modalFlex vert height40'>
-                    <p class="largeFont">Index out-of-bounds errors are a common type of software bug that arises when memory reads/writes are not properly safeguarded. These errors are notorious for allowing buffer overflow/overread attacks and ill-defined or malicious program behavior when not caught or handled in production-level code, and have led to critical security vulnerabilities such as the <a class='std' href = https://heartbleed.com>Heartbleed Bug</a> in OpenSSL library (2014).</p>
+                    <p class="largeFont">Index out of bounds errors are a common type of software bug that arises when memory reads/writes are not properly safeguarded. These errors are notorious for allowing buffer overflow/overread attacks and ill-defined or malicious program behavior when not caught or handled in production-level code, and have led to critical security vulnerabilities such as the <a class='std' href = https://heartbleed.com>Heartbleed Bug</a> in OpenSSL library (2014).</p>
                     <div></div>
                     <img src="/static/images/547_heartbleed.png">
                 </div>
@@ -144,7 +144,7 @@ title: Portfolio
                 <div class='modalFlex vert height50'>
                     <div></div>
                     <img src="/static/images/547_architecture.png">
-                    <p>For an arbitrary C program (<i>test.c</i>), clang generates an LLVM intermediate representation of the program (<i>test.ll</i>). The optimzer (opt) then uses the developed C++ program (<i>InstrumentPass.so</i>) to instrument <i>test.ll</i> with additional LLVM code whenever an an array or contiguous block of memory is accessed. Finally, the instrumented program <i>test.instrumented.ll</i> is linked with the runtime sanitizer and compiled into a binary executable <i>test</i>. If the program encounters no index out of bounds (OOB) errors during runtime, then the program runs and terminates normally. Otherwise, the program terminates and prints an error message to the terminal. </p>
+                    <p>For an arbitrary C program (<span class="codeFont">test.c</span>), <span class="codeFont">clang</span> generates an LLVM intermediate representation of the program (<span class="codeFont">test.ll</span>). The optimzer (<span class="codeFont">opt</span>) then uses the developed C++ program (<span class="codeFont">InstrumentPass.so</span>) to instrument <span class="codeFont">test.ll</span> with additional LLVM code whenever an an array or contiguous block of memory is accessed. Finally, the instrumented program <span class="codeFont">test.instrumented.ll</span> is linked with the runtime sanitizer and compiled into a binary executable <span class="codeFont"i>test</span>. If the program encounters no index out of bounds (OOB) errors during runtime, then the program runs and terminates normally. Otherwise, the program terminates and prints an error message to the terminal. </p>
                 </div>
             </div>
             <div class="modalPage">
@@ -154,25 +154,41 @@ title: Portfolio
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Detected Various Index Out-of-Bounds Errors</h3>
+                <h3>Example: Buffer Overflow Sanitization</h3>
                 <div class='modalFlex vert'>
-                    <ul class="check">
-                        <li>Arrays with primitative or complex data types (pointers, structs, etc.)</li>
-                        <li>1 and 2 dimensional arrays allocated on the stack</li>
-                        <li>Structs with an array field</li>
-                        <li>Dynamically allocated arrays using malloc() or calloc()</li>
-                        <li>String literals</li>
-                        <li>Arrays with dynamic access based on user input</li>
-                        <li>Pointer arithmetic after an array decays to a pointer</li> 
-                        <li>Buffer overflows when using strcpy()</li>
-                    </ul>
+                    <p></p>
+                    <img src="/static/images/547_buffer_overflow.png">
+                    <p class="largeFont centered">Vulnerable C program (line 14 causes a buffer overflow)</p>
                 </div>
             </div>
             <div class="modalPage">
                 <h3>Example: Buffer Overflow Sanitization</h3>
                 <div class='modalFlex vert'>
-                    <img src="/static/images/547_control_flow.png">
-                    <p>Vulnerable C program (line 14 causes a buffer overflow)</p>
+                    <div>
+                        <p class="largeFont"><b>Program Output Without Sanitizer</b></p>
+                        <img src="/static/images/547_no_sanitizer.png">
+                        <p>Program is manipulated via a <span class="codeFont">strcpy()</span> buffer overflow to give the student a grade of 100</p>
+                    </div>
+                    <div>
+                        <p class="largeFont"><b>Program Output With Sanitizer</b></p>
+                        <img src="/static/images/547_sanitizer.png">
+                        <p>While reading the variable <span class="codeFont">student</span>, <span class="codeFont">printf()</span> tries to access an index out of bounds to char array of size 6, causing the program to terminate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modalPage">
+                <h3>Successfully Detected Various Index Out of Bounds Errors</h3>
+                <div class='modalFlex vert'>
+                    <ul class="check">
+                        <li>Arrays with primitative or complex data types (pointers, structs, etc.)</li>
+                        <li>1 and 2 dimensional arrays allocated on the stack</li>
+                        <li>Structs with an array field</li>
+                        <li>Dynamically allocated arrays using <span class="codeFont">malloc()</span> or <span class="codeFont">calloc()</span></li>
+                        <li>String literals</li>
+                        <li>Arrays with dynamic access based on user input</li>
+                        <li>Pointer arithmetic after an array decays to a pointer</li> 
+                        <li>Buffer overflows when using <span class="codeFont">strcpy()</span></li>
+                    </ul>
                 </div>
             </div>
         </div>

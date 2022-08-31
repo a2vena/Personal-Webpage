@@ -100,6 +100,10 @@ html{
     text-align:center;
 }
 
+.codeFont{
+    font-family:'Courier New', Courier, monospace;
+}
+
 /*--------------------------TEMPLATE----------------------------*/
 
 /* (1) Navigation Bar */
@@ -466,6 +470,10 @@ footer {
 
 .modalPage p{
     text-align:justify;
+}
+
+.modalPage p.centered{
+    text-align:center;
 }
 
 .modalPage p.smallFont{
