@@ -424,6 +424,10 @@ footer {
     transform: translateX(-50%);
 }
 
+.width50 img{
+    max-width:50%;
+}
+
 .width80 img{
     max-width:80%;
 }
@@ -436,6 +440,10 @@ footer {
 .vert img{
     margin:0px auto; /* Top = bottom = 0px for justify-content to work for flex box, left = right = auto to prevent image aspect ratio distortion */
     max-width:100%
+}
+
+.height25 img{
+    max-height:25%;
 }
 
 .height40 img{
@@ -481,6 +489,10 @@ footer {
 }
 .modalPage p.largeFont{
     font-size:0.85em;
+}
+
+.modalPage p.mediumFont{
+    font-size:0.75em;
 }
 
 .modalPage span{

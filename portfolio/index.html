@@ -66,60 +66,74 @@ title: Portfolio
         <!-- Technical Projects-->
         <div class="modalProject">
             <div class="modalPage">
-                <h3>Problem: Microbial Growth on 3D Printed Items </h3><div></div>
-                <div class='modalFlex vert height50'>
-                    <img src="/static/images/fydp_01_microbial_growth_v1.jpg">
-                    <p>A standard FDM printer extrudes a plastic filament at high temperature through a mobile nozzle to create 3D structures. Compared to conventional plastics, the printed plastic is more susceptible to microbial retention due to an increase in surface roughness and internal void space, and not desirable for food contact applications.</p>
+                <h3>Objectives</h3>
+                <div class='modalFlex vert height25'>
+                    Inspired by work decentralization during the pandemic, my team built a web application that: <br>
+                    <div></div>
+                    <img src="/static/images/seaquills_downtown.png"> 
+                    <p class="largeFont centered">Helps users find a new city that fits their quality of life needs</p>
+               
+                   
+                    <img src="/static/images/seaquills_home.png"> 
+                    <p class="largeFont centered">Helps users find active listings that meet their housing requirements</p>
+                        
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Solution: Nanocomposite Ag-HDPE</h3><div></div>
-                <div class='modalFlex vert height50'>
-                    <img src="/static/images/fydp_02_antimicrobial_filament_v1.jpg">
-                    <p>My team designed a novel nanocomposite plastic to reduce microbial growth on 3D printed items. A low concentration of stabilized silver nanoparticles (AgNPs) were blended into a high-density polyethylene (HDPE) to create an antimicrobial plastic (<b>Ag-HDPE</b>) with thermal and mechanical stability. </p>
-                </div>
-            </div>
-            <div class="modalPage">
-                <h3>Synthesis of Stabilized Silver Nanoparticles</h3><div></div>
+                <h3>Full Stack Web Architecture</h3>
                 <div class='modalFlex vert'>
-                    <img src="/static/images/fydp_03_np_synthesis_v1.jpg">
-                    <p> <b>(a)</b> Organic synthesis of ligand-stabilized silver nanoparticles under reflux. <b>(b)</b> UV-Vis absorbance spectrum of the purified product confirmed the presence of silver nanoparticles.</p>
+                    
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Integration of Nanoparticles into HDPE Matrix</h3><div></div>
+                <h3>Application Features</h3>
+                <div class='modalFlex vert max'>
+                    <video poster>
+                        <source src='/static/videos/seaquills_frontpage.mp4' type='video/mp4'>
+                        <p>Video format not supported by your browser =(</p>
+                    </video> 
+                </div>
+            </div>
+            <div class="modalPage">
+                <h3>Interactive Quiz to Select Quality of Life Preferences</h3>
                 <div class='modalFlex vert'>
-                    <img src="/static/images/fydp_04_ag_hdpe_sem_v1.jpg">
-                    <p> Silver nanoparticles were integrated into HDPE by dissolving both components in a co-solvent at high temperature. The presence of silver nanoparticles in the HDPE was confirmed via scanning electron microscopy.</p>
+                    
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Exceptional Antimicrobial Activity</h3><div></div>
+                <h3>Dynamically Generated Table of Top US regions Matching User Preferences</h3>
                 <div class='modalFlex vert'>
-                    <img src="/static/images/fydp_05_antimicrobial_activity_v1.jpg">
-                    <p>HDPE and Ag-HDPE substrates were incubated with E. coli for 24 hours at room temperature. Bacterial growth was extracted from each plastic and transferred to an agar plate to count the number of viable bacterial colonies. Ag-HDPE reduced the growth of E. coli by 97% compared to a control HDPE surface.</p>
+                    
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Mechanically and Thermally Robust Plastic</h3><div></div>
+                <h3>Interactive Display of County Statistics from Backend Database</h3>
                 <div class='modalFlex vert'>
-                    <img src="/static/images/fydp_06_mechanical_thermal_properties_v1.jpg">
-                    <p>The elasticity and melting temperature of Ag-HDPE were not significantly affected by the inclusion of silver nanoparticles in the plastic. Ag-HDPE has the mechanical and thermal stability of HDPE, with the added benefit of antimicrobial activity.</p>
+                    
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Norman Esch Entrepreneurship Award</h3><div></div>
-                <div class='modalFlex vert height60'>
-                    <img src="/static/images/fydp_07_norman_esch_award_v2.jpg">
-                    <p>In addition to creating a viable product, my team developed a preliminary business plan to address the market need for an antimicrobial filament for 3D printers. We pitched our technology and business plan at the Norman Esch Design Competition, and were one of the six winning teams out of over 50 projects that entered the competition.</p>
+                <h3>Integrated with US Real Estate API to Show Active Listings for Selected Region</h3>
+                <div class='modalFlex vert'>
+                    
+                </div>
+            </div>
+            
+            <div class="modalPage">
+                <h3>Backend & Database Contributions</h3>
+                <div class='modalFlex vert'>
+                    <ul class="check">
+                        <li>Created and deployed MySQL relational database on AWS RDS</li>
+                        <li>Designed optimal SQL queries using secondary indexing</li>
+                        <li>Configured backend routes in Node.js to query database</li>
+                    </ul>
                 </div>
             </div>
             <div class="modalPage">
-                <h3>FYDP Symposium Poster</h3><div></div>
-                <div class='modalFlex main width80'>
-                    <a href="/static/pdfs/poster_01_antimicrobial_plastic.pdf">
-                        <img src="/static/images/fydp_08_poster_v1.jpg">
-                    </a>
+                <h3>Relational Database Design: 3NF Schema</h3>
+                <div class='modalFlex vert max'>
+                    <div></div>
+                    <img src="/static/images/seaquills_schema.png"> 
                 </div>
             </div>
         </div>
@@ -133,7 +147,7 @@ title: Portfolio
                 </div>
             </div>
             <div class="modalPage">
-                <h3>Project Objective</h3>
+                <h3>Main Objective</h3>
                 <div class='modalFlex vert'>
                     <p class="largeFont">Develop a sanitizer that is passed to C programs during compilation to detect common out of bounds runtime errors and terminate program execution with a detailed error message upon detection. 
                     </p>
