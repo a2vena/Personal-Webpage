@@ -171,6 +171,7 @@ if (document.querySelector('title').text == "Portfolio"){
         pages[index-1].style.display = "block";
         dots[index-1].style.backgroundColor='black';
 
+        // Displays left/right arrows for navigation
         if (index == 1){
             prev.style.display = 'none';
         }

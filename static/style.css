@@ -513,6 +513,10 @@ video{
     margin: 0px auto;
 }
 
+video.full{
+   max-width:100%; 
+}
+
 .check{
     margin:0;
     list-style:none;
